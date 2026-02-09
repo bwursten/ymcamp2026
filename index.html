@@ -435,6 +435,20 @@
             behavior: 'smooth'
         });
     });
+
+    // Automatically close the mobile menu after clicking a link
+const navLinks = document.querySelectorAll('.nav-link:not(.dropdown-toggle)');
+const menuToggle = document.getElementById('navbarNav');
+const bsCollapse = new bootstrap.Collapse(menuToggle, {toggle:false});
+
+navLinks.forEach((l) => {
+    l.addEventListener('click', () => { 
+        // Only trigger if the hamburger menu is actually visible (mobile view)
+        if (window.getComputedStyle(menuToggle).display !== 'none') {
+            bsCollapse.hide();
+        }
+    });
+});
 </script>
 
 </body>
