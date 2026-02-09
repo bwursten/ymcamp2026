@@ -42,6 +42,10 @@
             font-weight: 800;
         }
 
+        section {
+    scroll-margin-top: 70px; /* This ensures the header doesn't cover the title */
+}
+
         /* Hero Section */
         .hero {
             background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('img/hero.jpg');
@@ -75,6 +79,35 @@
             opacity: 1;
             border: 1px solid #666;
         }
+
+/* Option 2: Subtle Document Badge */
+.pdf-badge {
+    display: inline-flex;
+    align-items: center;
+    background-color: #f1f1e6; /* A slightly darker shade of your cream background */
+    color: var(--charcoal);
+    padding: 8px 15px;
+    border-radius: 4px;
+    border-left: 4px solid var(--clay-red);
+    text-decoration: none;
+    font-size: 0.85rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+    transition: all 0.2s ease-in-out;
+}
+
+.pdf-badge:hover {
+    background-color: #e2e2cc;
+    color: var(--forest-green);
+    text-decoration: none;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.05);
+}
+
+.pdf-badge i {
+    font-size: 1.1rem;
+    margin-right: 10px;
+    color: var(--clay-red);
+}
 
         /* Scroll Arrow */
         .scroll-indicator {
@@ -300,7 +333,9 @@
                     </h2>
                     <div id="collapseIndividual" class="accordion-collapse collapse" data-bs-parent="#packingAccordion">
                         <div class="accordion-body bg-white rounded-bottom">
-                            <p><i class="fas fa-regular fa-file-pdf"></i> <a href="#">Download list</a></p> 
+                            <a href="individual-packing-list.pdf" class="pdf-badge" target="_blank">
+        <i class="fas fa-file-pdf"></i> DOWNLOAD INDIVIDUAL LIST (PDF)
+    </a>
                             <h6><strong>Clothing & Gear</strong></h6>
                             <ul class="small">
                                 <li>Sleeping bag and pillow</li>
@@ -321,7 +356,9 @@
                     </h2>
                     <div id="collapseWard" class="accordion-collapse collapse" data-bs-parent="#packingAccordion">
                         <div class="accordion-body bg-white rounded-bottom">
-                           <p><i class="fas fa-regular fa-file-pdf"></i> <a href="#">Download list</a></p> 
+                           <a href="ward-packing-list.pdf" class="pdf-badge" target="_blank">
+        <i class="fas fa-file-pdf"></i> DOWNLOAD WARD LIST (PDF)
+    </a>
                             <ul class="small">
                                 <li>Ward flags and spirit gear</li>
                                 <li>Extra water jugs and coolers</li>
