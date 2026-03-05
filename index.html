@@ -236,26 +236,34 @@
                 <div><span id="minutes" class="h2 d-block">00</span> MINS</div>
             </div>
 
-            <div class="d-flex flex-column flex-sm-row justify-content-center align-items-center gap-3">
-<button type="button" class="btn btn-lg cta-btn text-white d-flex align-items-center justify-content-center" data-bs-toggle="modal" data-bs-target="#registrationModal">
-    YOUTH REGISTRATION
-</button>
-                <div class="text-center">
-                    <button class="btn btn-lg btn-disabled text-white d-flex flex-column align-items-center justify-content-center" disabled>
-                        <span>ADULT REGISTRATION</span>
-                        <small style="font-size: 0.65rem; opacity: 0.8; margin-top: -2px;">(COMING SOON)</small>
-                    </button>
-                </div>
-            </div>
+ <div class="d-flex flex-column flex-sm-row justify-content-center align-items-center gap-3">
+        <button type="button" class="btn btn-lg cta-btn text-white d-flex align-items-center justify-content-center" data-bs-toggle="modal" data-bs-target="#registrationModal">
+            YOUTH REGISTRATION
+        </button>
+        <div class="text-center">
+            <button class="btn btn-lg btn-disabled text-white d-flex flex-column align-items-center justify-content-center" disabled>
+                <span>ADULT REGISTRATION</span>
+                <small style="font-size: 0.65rem; opacity: 0.8; margin-top: -2px;">(COMING SOON)</small>
+            </button>
+        </div>
+    </div>
+    
+    <p class="mt-4 text-center w-100" style="font-weight: 700; color: #ffffff; text-shadow: 1px 1px 4px rgba(0,0,0,0.8); font-size: 1.1rem; letter-spacing: 1px;">
+        <i class="fas fa-clock me-2"></i>Registration closes on March 31
+    </p>
         </div>
         <a href="#purpose" class="scroll-indicator"><i class="fas fa-chevron-down"></i></a>
     </header>
 
-    <section id="purpose" class="section-padding container text-center">
-        <h2>Camp Purpose</h2>
-        <div class="row justify-content-center">
-            <div class="col-md-8">
-                <p class="lead mt-4">"Lift where you stand" is our call to action this summer. We will focus on growing in our current roles, serving those around us, and strengthening our connection to the Savior at Camp Grady Spruce.</p>
+<section id="purpose" class="section-padding container">
+        <div class="row align-items-center justify-content-center g-5">
+            <div class="col-md-5 text-center text-md-end">
+                <img src="img/camp-logo.jpg" alt="Lift Where You Stand Camp Theme" class="img-fluid rounded shadow-lg" style="max-height: 500px; border: 4px solid var(--cream);">
+            </div>
+            
+            <div class="col-md-7 text-center text-md-start">
+                <h2 class="mb-4">Camp Purpose</h2>
+                <p class="lead">Our week at Stake Young Men's Camp will combine adventure, teamwork, and outdoor challenges with opportunities for every young man to build lasting friendships, strengthen his faith in Jesus Christ, and teach each young man how to lift where they stand.</p>
             </div>
         </div>
     </section>
@@ -291,7 +299,7 @@
                 <div class="col-6 col-md-4 col-lg-3">
         <div class="activity-card">
             <i class="fas fa-mountain activity-icon"></i>
-            <h5>Climbing</h5>
+            <h5>Cliff Jumping</h5>
         </div>
     </div>
                 
@@ -323,43 +331,110 @@
         <p class="lead">Everything you need to know before we head to the lake.</p>
     </div>
 
-    <div class="row g-4 justify-content-center">
+<div class="row g-4 justify-content-center">
         <div class="col-lg-5">
             <div class="accordion shadow-sm" id="packingAccordion">
                 
                 <div class="accordion-item mb-3 border-0">
                     <h2 class="accordion-header">
-                        <button class="accordion-button collapsed rounded" type="button" data-bs-toggle="collapse" data-bs-target="#collapseIndividual">
-                            <i class="fas fa-user-tag me-3 text-muted"></i> Individual Packing List
+                        <button class="accordion-button collapsed rounded" type="button" data-bs-toggle="collapse" data-bs-target="#collapseForms">
+                            <i class="fas fa-file-signature me-3 text-muted"></i> Required Forms
                         </button>
                     </h2>
-                    <div id="collapseIndividual" class="accordion-collapse collapse" data-bs-parent="#packingAccordion">
+                    <div id="collapseForms" class="accordion-collapse collapse" data-bs-parent="#packingAccordion">
                         <div class="accordion-body bg-white rounded-bottom">
-                            <a href="individual-packing-list.pdf" class="pdf-badge" target="_blank">
-        <i class="fas fa-file-pdf"></i> DOWNLOAD INDIVIDUAL LIST (PDF)
-    </a>
-                            <h6><strong>Clothing & Gear</strong></h6>
-                            <ul class="small">
-                                <li><i>Coming soon</i></li>
-                                   </ul>
+                            <p class="small mb-3">These forms must be filled out and uploaded during the online registration process.</p>
+                            <a href="forms/Permission_and_Medical_Release_form.pdf" class="pdf-badge d-flex w-100 mb-2" target="_blank">
+                                <i class="fas fa-file-pdf"></i> PERMISSION AND MEDICAL RELEASE FORM
+                            </a>
+                            <a href="forms/YMCA_Grady_Spruce_Waiver.pdf" class="pdf-badge d-flex w-100" target="_blank">
+                                <i class="fas fa-file-pdf"></i> YMCA GRADY SPRUCE WAIVER FORM
+                            </a>
                         </div>
                     </div>
                 </div>
 
                 <div class="accordion-item mb-3 border-0">
                     <h2 class="accordion-header">
-                        <button class="accordion-button collapsed rounded" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWard">
-                            <i class="fas fa-campground me-3 text-muted"></i> Ward Packing List
+                        <button class="accordion-button collapsed rounded" type="button" data-bs-toggle="collapse" data-bs-target="#collapseIndividual">
+                            <i class="fas fa-user-tag me-3 text-muted"></i> Packing List
                         </button>
                     </h2>
-                    <div id="collapseWard" class="accordion-collapse collapse" data-bs-parent="#packingAccordion">
-                        <div class="accordion-body bg-white rounded-bottom">
-                           <a href="ward-packing-list.pdf" class="pdf-badge" target="_blank">
-        <i class="fas fa-file-pdf"></i> DOWNLOAD WARD LIST (PDF)
-    </a>
+                    <div id="collapseIndividual" class="accordion-collapse collapse" data-bs-parent="#packingAccordion">
+                        <div class="accordion-body bg-white rounded-bottom" style="max-height: 500px; overflow-y: auto; padding: 1.5rem;">
+                            <a href="img/packinglist.pdf" class="pdf-badge" target="_blank">
+                                <i class="fas fa-file-pdf"></i> DOWNLOAD PACKING LIST (PDF)
+                            </a>
+                            <h6 class="text-uppercase fw-bold" style="color: var(--olive-drab);"><strong>Important Reminders</strong></h6>
                             <ul class="small">
-                                <li><i>Coming soon</i></li>
+                                <li>Label important items with the camper's name (clothes, towels, water bottles, bags)</li>
+                                <li>Pack old clothes—camp is dusty, muddy, and active</li>
+                                <li>No electronics (phones, tablets, gaming devices)</li>
                             </ul>
+                            <h6 class="text-uppercase fw-bold" style="color: var(--olive-drab);"><strong>Bedding (Beds Provided – Bring Your Own Bedding)</strong></h6>
+                            <ul class="small">
+                                <li>Twin-size sheets and blanket OR sleeping bag</li>
+                                <li>Pillow & pillowcase</li>
+                                <li>Mattress cover (optional)</li>
+                            </ul>
+                            <h6 class="text-uppercase fw-bold" style="color: var(--olive-drab);"><strong>Clothing (Plan for hot days and water activities)</strong></h6>
+                            <ul class="small">
+                                <li>T-shirts (1 per day recommended)</li>
+                                <li>Athletic shorts</li>
+                                <li>Pajamas</li>
+                                <li>Underwear</li>
+                                <li>Socks</li>
+                                <li>Swimsuits</li>
+                                <li>Closed-toe athletic shoes (must be able to get wet)</li>
+                                <li>Flip-flops or shower shoes</li>
+                                <li>Hat or cap (sun protection)</li>
+                            </ul>  
+                            <h6 class="text-uppercase fw-bold" style="color: var(--olive-drab);"><strong>Toiletries & Personal Care</strong></h6>
+                            <ul class="small">
+                                <li>Shower towel & washcloth</li>
+                                <li>Toiletry bag</li>
+                                <li>Toothbrush & toothpaste</li>
+                                <li>Soap/body wash</li>
+                                <li>Shampoo</li>
+                                <li>Deodorant</li>
+                                <li>Sunscreen</li>
+                                <li>Mosquito/insect repellent</li>
+                                <li>Lip balm (SPF helpful)</li>
+                                <li>Any required prescription medications (follow leader instructions)</li>
+                            </ul>    
+                            <h6 class="text-uppercase fw-bold" style="color: var(--olive-drab);"><strong>Day & Activity Gear</strong></h6>
+                            <ul class="small">
+                                <li>Small daypack </li>
+                                <li>Refillable water bottle</li>
+                                <li>Flashlight (with extra batteries)</li>
+                                <li>Rain poncho (optional)</li>
+                                <li>Sunglasses</li>
+                                <li>Small notebook & pen/pencil</li>
+                                <li>Paper scriptures</li>
+                                <li>Work gloves (optional but helpful)</li>
+                                <li>Laundry bag for dirty laundry</li>
+                            </ul>   
+                            <h6 class="text-uppercase fw-bold" style="color: var(--olive-drab);"><strong>Water & Outdoor Extras</strong></h6>
+                            <ul class="small">
+                                <li>Swim towel (separate from shower towel)</li>
+                                <li>Water shoes (optional but recommended)</li>
+                                <li>Small plastic bag for wet clothes</li>
+                                <li>Sunscreen stick (easy reapplication)</li>
+                            </ul>  
+                            <h6 class="text-uppercase fw-bold" style="color: var(--olive-drab);"><strong>Optional Items</strong></h6>
+                            <ul class="small">
+                                <li>Camera (no phones)</li>
+                                <li>Small book or journal</li>
+                                <li>Small camp chair</li>
+                            </ul>    
+                            <h6 class="text-uppercase fw-bold" style="color: var(--olive-drab);"><strong>Do NOT Bring</strong></h6>
+                            <ul class="small">
+                                <li>Cell phones or smart devices</li>
+                                <li>Gaming systems or tablets</li>
+                                <li>Knives, weapons, fireworks</li>
+                                <li>Jewelry or valuables</li>
+                                <li>Expensive items you'd be upset to lose</li>
+                            </ul>                                                                                                                                                                                                                
                         </div>
                     </div>
                 </div>
@@ -369,25 +444,7 @@
 
         <div class="col-lg-5">
             <div class="accordion shadow-sm" id="infoAccordion">
-                <div class="accordion-item mb-3 border-0">
-    <h2 class="accordion-header">
-        <button class="accordion-button collapsed rounded" type="button" data-bs-toggle="collapse" data-bs-target="#collapseForms">
-            <i class="fas fa-file-signature me-3 text-muted"></i> Required Forms
-        </button>
-    </h2>
-    <div id="collapseForms" class="accordion-collapse collapse" data-bs-parent="#infoAccordion">
-        <div class="accordion-body bg-white rounded-bottom">
-            <p class="small mb-3">These forms must be filled out and uploaded during the online registration process.</p>
-            <a href="forms/Permission_and_Medical_Release_form.pdf" class="pdf-badge d-flex w-100 mb-2" target="_blank">
-                <i class="fas fa-file-pdf"></i> PERMISSION AND MEDICAL RELEASE FORM
-            </a>
-            <a href="forms/YMCA_Grady_Spruce_Waiver.pdf" class="pdf-badge d-flex w-100" target="_blank">
-                <i class="fas fa-file-pdf"></i> YMCA GRADY SPRUCE WAIVER FORM
-            </a>
-        </div>
-    </div>
-</div>
-
+                
                 <div class="accordion-item mb-3 border-0">
                     <h2 class="accordion-header">
                         <button class="accordion-button collapsed rounded" type="button" data-bs-toggle="collapse" data-bs-target="#collapseRules">
@@ -396,9 +453,9 @@
                     </h2>
                     <div id="collapseRules" class="accordion-collapse collapse" data-bs-parent="#infoAccordion">
                         <div class="accordion-body bg-white rounded-bottom">
-                            <ol class="small">
+                            <ul class="small">
                                 <li><i>Coming soon</i></li>
-                            </ol>
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -409,15 +466,81 @@
                             <i class="fas fa-question-circle me-3 text-muted"></i> FAQ
                         </button>
                     </h2>
-                    <div id="collapseFAQ" class="accordion-collapse collapse" data-bs-parent="#infoAccordion">
-                        <div class="accordion-body bg-white rounded-bottom">
-                            <p class="small"><strong>Where will we sleep?</strong> We will be staying in newly built cabins.</p>
-                            <p class="small"><strong>Food?</strong> Lunch and dinner will be provided by Camp Grady Spruce in the dining hall. The stake will provide breakfasts.</p>
-                            <p class="small"><strong>How much is camp?</strong> The final price is still being determined. Some of the cost may be offset by ward fundraisers.</p>
-                            <p class="small"><strong>How do we pay?</strong> Put "YM Camp" in the Other field either online or using a paper donation slip.</p>
-                            <p class="small"><strong>How do we get to camp?</strong> Each ward will arrange transportion for its own youth.</p>
-                        </div>
-                    </div>
+<div id="collapseFAQ" class="accordion-collapse collapse" data-bs-parent="#infoAccordion">
+    <div class="accordion-body bg-white rounded-bottom" style="max-height: 500px; overflow-y: auto; padding: 1.5rem;">
+        
+        <h6 class="text-uppercase fw-bold" style="color: var(--olive-drab);">General Information</h6>
+        <p class="small mb-1"><strong>When is camp?</strong><br>Camp will be held June 22–26.</p>
+            <ul>
+                <li class="small">Priest quorum: Monday–Friday (June 22–26)</li>
+                <li class="small">All other young men: Tuesday–Friday (June 23–26)</li>
+            </ul>
+        <p class="small mb-1"><strong>Who can attend camp?</strong><br>All registered young men in the Lewisville Stake are invited to attend. Approved non-member friends may also attend (see details below).</p>
+        <p class="small mb-3"><strong>Who is organizing the camp and who should I contact for additional questions?</strong><br>The camp is planned and directed by the stake Young Men leaders in accordance with the guidelines outlined in the Lewisville Stake YM Camp notebook, with support from ward adult leaders. Each ward has also called an Assistant Executive Secretary who helps coordinate communication and planning between the stake and the ward. <strong>For most questions about camp, your ward’s Assistant Executive Secretary should be your first point of contact.</strong></p>
+        
+        <div class="table-responsive mb-4 border rounded">
+            <table class="table table-sm table-striped table-hover mb-0 small text-center align-middle">
+                <thead style="background-color: var(--cream);">
+                    <tr><th>Ward</th><th>Representative</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td>Argyle</td><td>Eron Dahl</td></tr>
+                    <tr><td>Cross Timbers</td><td>Preston Peterson</td></tr>
+                    <tr><td>Double Oak</td><td>Wes Clayton</td></tr>
+                    <tr><td>Flower Mound</td><td>Scott Booth</td></tr>
+                    <tr><td>Highland Village</td><td>Ian Folkman</td></tr>
+                    <tr><td>Lake Dallas</td><td>Doug Taylor</td></tr>
+                    <tr><td>Lantana</td><td>Dave Havenar</td></tr>
+                    <tr><td>Lewisville 1st</td><td>Doug Ensign</td></tr>
+                    <tr><td>Lewisville 3rd</td><td>Gared Parker</td></tr>
+                    <tr><td>Stone Creek</td><td>Kalin Vorwaller</td></tr>
+                    <tr><td>Timber Creek</td><td>Jacob Peterson</td></tr>
+                    <tr><td>Twin Coves</td><td>Brian Gross</td></tr>
+                </tbody>
+            </table>
+        </div>
+
+        <h6 class="text-uppercase fw-bold mt-4" style="color: var(--olive-drab);">Registration & Paperwork</h6>
+        <p class="small mb-1"><strong>How do I register for camp?</strong><br>All registration is completed online through this website. There are three forms that need to be completed. Registration will not be counted until all three forms are submitted.</p>
+
+        <h6 class="text-uppercase fw-bold mt-4" style="color: var(--olive-drab);">Cost & Payment</h6>
+        <p class="small mb-1"><strong>How much does camp cost?</strong><br>Final cost per YM will be determined by each ward and can be offset by ward-run fundraisers.</p>
+        <p class="small mb-1"><strong>How and when do payments need to be made?</strong><br>Payment needs to be made using the donation slip, under other, YM CAMP.</p>
+        <p class="small mb-1"><strong>What if a family or adult cannot afford the cost?</strong><br>Please contact your Bishop to discuss financial assistance options. No one should miss camp due to financial hardship.</p>
+
+        <h6 class="text-uppercase fw-bold mt-4" style="color: var(--olive-drab);">Non-Member Friends</h6>
+        <p class="small mb-1"><strong>Can young men invite non-member friends?</strong><br>Yes. Young men may invite non-member friends to attend camp. Attendance is first come, first served until bed capacity is reached.</p>
+        <p class="small mb-1"><strong>How do non-member friends pay?</strong><br>Each ward will determine how non-member friends handle payment.</p>
+
+        <h6 class="text-uppercase fw-bold mt-4" style="color: var(--olive-drab);">Arrival, Departure & Transportation</h6>
+        <p class="small mb-1"><strong>When do young men arrive?</strong><br>Priest quorum: Monday, June 22 at 12noon.<br>All other young men: Tuesday, June 23 at 10am.</p>
+        <p class="small mb-1"><strong>How is transportation handled?</strong><br>Transportation will be coordinated through individual wards by each ward's Assistant Executive Secretary. More details will be shared at the ward level closer to camp.</p>
+
+        <h6 class="text-uppercase fw-bold mt-4" style="color: var(--olive-drab);">Meals & Snacks</h6>
+        <p class="small mb-1"><strong>What meals are provided?</strong><br>Camp Grady Spruce will provide all three meals.</p>
+        <p class="small mb-1"><strong>Are snacks provided?</strong><br>Yes. The stake will provide snacks, and young men are welcome to bring additional personal snacks.</p>
+        <p class="small mb-1"><strong>What about food allergies or dietary needs?</strong><br>Dietary needs will be collected during registration and accommodated when possible.</p>
+
+        <h6 class="text-uppercase fw-bold mt-4" style="color: var(--olive-drab);">Medical and Safety</h6>
+        <p class="small mb-1"><strong>Will there be medical support at camp?</strong><br>A medical professional will be present at camp to provide assistance as needed. Emergency services are nearby and will be contacted if a serious situation arises.</p>
+        <p class="small mb-1"><strong>How is medication handled at camp?</strong><br>Please list all medications on the registration form. Young men are generally responsible for self-administering their medication, though leaders can help remind them if needed. Any special situation should be coordinated with ward leaders ahead of time.</p>
+        <p class="small mb-1"><strong>How can I contact my child in case of an emergency?</strong><br>Leaders will have phones during camp. Each ward will provide parents with emergency contact information if they need to reach their child while camp is in session.</p>
+
+        <h6 class="text-uppercase fw-bold mt-4" style="color: var(--olive-drab);">Phones, Electronics & Rules</h6>
+        <p class="small mb-1"><strong>Are phones allowed at camp?</strong><br>No. Youth will not be allowed to have phones during camp.</p>
+
+        <h6 class="text-uppercase fw-bold mt-4" style="color: var(--olive-drab);">Adult Leaders & Support</h6>
+        <p class="small mb-1"><strong>How many adults will attend from each ward?</strong><br>Each ward is asked to provide at least three adults. Wards with larger participation may be asked to provide additional adult support.</p>
+        <p class="small mb-1"><strong>Do adults need to register and pay?</strong><br>Yes. All adults must register and pay the full cost of camp.</p>
+        <p class="small mb-1"><strong>Can ward funds help cover adult costs?</strong><br>Yes. Bishops have discretion to use ward funds to offset adult costs.</p>
+        <p class="small mb-1"><strong>Are there additional adults helping with activities?</strong><br>Yes. Some adults may assist with specific activities only. These individuals may help with preparation before camp and attend camp for one day to help execute an activity and are separate from the ward’s 3–5 adult leaders.</p>
+
+        <h6 class="text-uppercase fw-bold mt-4" style="color: var(--olive-drab);">Questions & Updates</h6>
+        <p class="small mb-1"><strong>Who should I contact with questions?</strong><br>Please contact your ward Assistant Executive Secretary or the stake Young Men camp leadership.</p>
+        <p class="small mb-0"><strong>Where will updates be shared?</strong><br>All updates will be posted on this website.</p>
+
+    </div>
+</div>
                 </div>
 
             </div>
@@ -436,7 +559,7 @@
                 </div>
                 <div class="col-md-5 ps-md-5">
                     <h3>Contacts</h3>
-        <p> Please contact your ward camp directors with questions.</p>
+        <p> Please contact your ward's Assistant Executive Secretary with questions.</p>
                     <div class="mt-3">
                         <p><strong>Stake YM Camp Director:</strong> Todd Salway</p>
                         <p><strong>Stake YM Assistant Camp Director:</strong> J.D. Swenson</p>
